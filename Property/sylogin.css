@@ -1,0 +1,119 @@
+body{
+    /* background: linear-gradient(to right bottom,rgb(239, 118, 12),white); */
+    background-image: url(./image/beautiful-view-city-twilight_1137-270.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.def{
+    font-weight: 600;
+    font-size: 2rem;
+    position: absolute;
+    color: black;
+
+}
+
+
+
+
+
+
+.content{
+    background: #fff;
+    max-width: 100%;
+    padding: 2rem;
+    width: 100%;
+    /* padding: 25px 30px; */
+    border-radius: 5px;
+    margin-top: 5rem;
+    box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .content form .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    position: relative;
+  }
+  .content form .title:before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 80px;
+    left: 0px;
+    bottom: 3px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  }
+  .content form .input-box{
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    position: relative;
+  }
+  .content form .input-box input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+  }
+  .content form .underline::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+  }
+  .content form .underline::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+  }
+  .content form .input-box input:focus ~ .underline::after,
+  .content form .input-box input:valid ~ .underline::after{
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  .content form .button{
+    margin: 40px 0 20px 0;
+  }
+  .content .option{
+    font-size: 14px;
+    text-align: center;
+  }
+  .content .facebook a,
+  .content .twitter a{
+    display: block;
+    height: 45px;
+    width: 100%;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 20px;
+    line-height: 45px;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .content .facebook i,
+  .content .twitter i{
+    padding-right: 12px;
+    font-size: 20px;
+  }
+  .content .facebook a{
+    background: linear-gradient( to right,  #3b5998 0%, #476bb8 100%);
+    margin: 20px 0 50px 0;
+  }
+  .content .facebook a:hover{
+    background: linear-gradient( to left,  #3b5998 0%, #476bb8 100%);
+    margin: 20px 0 50px 0;
+  }
